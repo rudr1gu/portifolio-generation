@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    width: 99vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    &:hover{
+        color: #007bff;
+    }
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: #007bff;
+}
+
+
+
+.container{
+    background-color: #fff;
+    width: 80%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: center;
+        .img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+    .texto{
+        margin-left: 20px;
+        width: 80%;
+        p{
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+    }
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 80%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#pagina-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+main h1{
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main p{
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+main button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main button:hover{
+    background-color: #0056b3;
+}
+
+.page2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px;
+    width:  30%;
+    height: 60%;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width:  30%;
+    height: 60%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h1{
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+form button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover{
+    background-color: #0056b3;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+}
+
