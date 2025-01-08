@@ -11,12 +11,21 @@ html, body{
     font-size: 1em;
 }
 
+:root{
+    --primary-color: #007bff;
+    --light-color: #f0f0f0;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #333;
+    --gray-light-color: #666;
+}
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: var(--light-color);
 }
 
 header{
@@ -27,7 +36,7 @@ header{
     align-items: center;
     width: 100%;
     padding: 20px 40px;
-    background-color: #fff;
+    background-color: var(--white-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
     nav ul{
@@ -37,10 +46,10 @@ header{
             margin-right: 20px;
             a{
                 text-decoration: none;
-                color: #333;
+                color: var(--gray-color);
                 font-size: 18px;
                 &:hover{
-                    color: #007bff;
+                    color: var(--primary-color);
                 
                 }
             }
@@ -59,15 +68,15 @@ main{
 
 a{
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-size: 1.2em;
     &:hover{
-        color: #007bff;
+        color: var(--primary-color);
     }
 }
 
 .container{
-    background-color: #fff;
+    background-color: var(--white-color);
     width: 80%;
     padding: 40px;
     border-radius: 20px;
@@ -120,7 +129,7 @@ a{
 
         p{
             font-size: 1em;
-            color: #666;
+            color: var(--gray-light-color);
             margin-bottom: 20px;
             text-align: justify;
         }
@@ -132,7 +141,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--white-color);
     width: 80%;
     padding: 40px;
     border-radius: 20px;
@@ -162,7 +171,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -176,7 +185,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -192,7 +201,7 @@ form{
     flex-direction: column;
     h1{
         font-size: 48px;
-        color: #333;
+        color: var(--gray-color);
         margin-bottom: 20px;
     }
     input{
@@ -207,13 +216,13 @@ form{
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
+        background-color: var(--primary-color);
+        color: var(--white-color);
         font-size: 18px;
         cursor: pointer;
         margin-top: 10px;
         &:hover{
-            background-color: #0056b3;
+            background-color: var(--primary-color);
         }
     }
 }
@@ -238,8 +247,7 @@ footer{
     flex-direction: column;
     width: 100%;
     min-height: 100px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--gray-color);
+    color: var(--white-color);
     font-size: 18px;
 }
-
